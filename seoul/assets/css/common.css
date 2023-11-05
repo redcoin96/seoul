@@ -1,0 +1,39 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+
+.wrapper {
+  min-width: 1152px;
+}
+
+#skipNav {
+  position: absolute;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+#skipNav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: 100%;
+
+  color: #fff;
+  transform: translateY(-100%);
+}
+
+#skipNav a:active,
+#skipNav a:focus {
+  transform: translateY(0);
+  background: #383838;
+}
+
